@@ -5,7 +5,8 @@
   "angular-cli": {},
   "scripts": {
     "ng": "ng",
-    "start": "ng serve"
+    "start": "ng serve",
+    "build": "ng build --target=production --environment=prod"
   },
   "private": true,
   "dependencies": {
@@ -29,8 +30,8 @@
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.42",
     "angular-cli": "1.0.0-beta.26",
-    "codelyzer": "~2.0.0-beta.1",
     "ts-node": "1.2.1",
-    "typescript": "2.0.3"
+    "typescript": "2.0.3",
+    "codelyzer": "~2.0.0-beta.1"
   }
 }
