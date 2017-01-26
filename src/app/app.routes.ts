@@ -9,7 +9,8 @@ const appRoutes: Routes = [
     { path: '', redirectTo: 'rates', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
-    { path: 'rates', component: CurrencyComponent }
+    { path: 'rates', component: CurrencyComponent },
+    { path: '**', redirectTo: 'rates', pathMatch: 'full' }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

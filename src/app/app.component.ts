@@ -14,7 +14,8 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
         this.router.events.subscribe((route: any) => {
-            this.active = route.url;
+            // Check if the route is redirected
+            this.active = route.urlAfterRedirects || route.url;
         });
     }
 }
