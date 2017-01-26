@@ -1,31 +1,23 @@
-# Currency
+## Exchange rates app
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
+This is a simple app that display exchange rates based on a currency type
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## How to use
+* You need nodejs and npm installed on the machine, was tested with node 7.x.x
+* clone the repository and navigate to the project folder
+* run `npm install` to install the project dependencies
+* run `npm start` to build the project and start the web server
+* open the browser on http://localhost:4200/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-## Build
+## Production ready
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+* This also can be used as production ready project
+* run `npm run build` and it will create gziped files in the dist folder ready to be served/deploy on your own server
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Tech stack
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* This was created with Angular CLI : https://github.com/angular/angular-cli
+* Angular2 + Typescript
