@@ -1,0 +1,66 @@
+:host {
+    display: block;
+    float: left;
+    clear: left;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin-top: 50px;
+}
+
+.rates {
+    margin: 30px 20px;
+    float: left;
+    clear: left;
+
+    &__line {
+        float: left;
+        clear: left;
+        background: white;
+        border-radius: 5px;
+        font-size: 14px;
+
+        &--odd {
+            background: #efefef;
+        }
+    }
+
+    &__text {
+        float: left;
+        padding: 2px;
+        min-width: 110px;
+        text-align: center;
+    }
+
+    &__currency {
+        color: #434343;
+        font-weight: 600;
+    }
+
+    &__value {
+        color: #0f276c;
+    }
+}
+
+.selectors {
+    &__name {
+        color: #8e8e8e;
+
+        &--left {
+            margin-left: 45px;
+        }
+
+        &--right {
+            margin-left: 85px;
+        }
+    }
+}
+
+select {
+    width: 115px;
+    margin-left: 30px;
+}
+
+.input-wrapper {
+    float: left;
+}

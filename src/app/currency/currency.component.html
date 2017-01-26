@@ -1,0 +1,23 @@
+<div class="input-wrapper">
+    <div class="selectors__name">
+        <span class="selectors__name--left">Date</span>
+        <span class="selectors__name--right">Base currency</span>
+    </div>
+    <div class="selectors__action">
+        <material-datepicker (onSelect)="changeDate($event)"></material-datepicker>
+
+        <select (change)="changeCurrency($event)">
+            <option value="" selected="selected">Select currency</option>
+            <option *ngFor="let currency of currenciesList"  [value]="currency.currency">
+                {{currency.currency}}
+            </option>
+        </select>
+    </div>
+</div>
+
+<div class="rates">
+    <div *ngFor="let rate of rates; let i=index" class="rates__line" [class.rates__line--odd]="i%2">
+        <div class="rates__text rates__currency">{{rate.currency}}</div>
+        <div class="rates__text rates__value">{{rate.value}}</div>
+    </div>
+</div>

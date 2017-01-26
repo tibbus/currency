@@ -1,0 +1,9 @@
+@import '../../styles';
+
+:host {
+    @extend %content-wrapper;
+}
+
+span {
+    @extend %content-text;
+}

@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: #f0f0f0;
+}
+
+.datepicker__input {
+    width: 100px;
+}
+
+%content-wrapper {
+    @extend %center;
+
+    width: 500px;
+    height: 300px;
+    background: white;
+    display: block;
+    border-radius: 50%;
+}
+
+%content-text {
+    @extend %center;
+
+    font-size: 23px;
+    color: #706767;
+    width: 400px;
+}
+
+%center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
